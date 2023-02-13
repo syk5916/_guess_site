@@ -1,0 +1,295 @@
+@charset "utf-8";
+
+
+/*1500이상*/
+@media all and (min-width:1500px){
+    
+#bottom{
+    width:100%; height:40%;
+    background-color:#111111;
+    color:#ffffff;
+    font-size:14px;
+}
+#bottom a{
+   
+    display:block;
+}
+.bottom_wrap{
+    width:95%;
+    margin:20px auto;
+}
+/*logo*/
+#bottom h1 img{
+    margin-top:20px;
+    float:left;
+}
+.bottom_top{
+    position:relative;
+}
+.bottom_top ul li a{
+    display:block;
+}
+.bottom_top .info{
+    float:left;
+}
+.bottom_top .info a{
+    color:#ffffff;
+}
+
+.bottom_top  .info li{
+    float:left; 
+    margin:40px 10px;
+}
+
+/*sns*/
+.bottom_top .sns{
+    float:right;
+    margin-right:70px;
+    cursor:pointer;
+}
+.bottom_top .sns li{
+    float:left;
+    margin:20px 5px;
+    width:53px; height:53px;
+    text-indent:-9999px;
+}
+.bottom_top .sns li:nth-child(1){
+    background:url(../images/icon/insta.png) no-repeat center;
+}
+.bottom_top .sns li:nth-child(2){
+    background:url(../images/icon/facebook.png) no-repeat 50% 5px;
+    border:4px solid #ffffff;
+    width:43px; height:43px;
+    border-radius:5px;
+   margin-top:25px;
+}
+.bottom_top .sns li:nth-child(3){
+    background:url(../images/icon/blog.png) no-repeat center;
+}
+.bottom_top .family a{
+    color:#ffffff;   
+}
+
+.bottom_top .family{ 
+    
+   position:absolute;
+   top:30px; right:270px;
+    border:2px solid #ffffff;
+    font-weight: bold;
+    font-size:14px; 
+    line-height:40px;
+    text-align:center;
+    width:100px; height:40px;
+}
+.bottom_top .family:hover{
+    border:2px solid #222222;
+    font-weight: bold;
+    background-color:#ffffff;
+}
+.bottom_top .family:hover>a{
+    display:block;
+    color:#222222;
+}
+.bottom_content {
+    clear:both; width:100%; height:auto;
+    position:relative;
+}
+
+.guess_korea p:first-child{
+    margin-bottom:20px;
+}
+.guess_korea address{
+    font-style:normal;
+    margin-top:20px;
+}
+
+.contact{
+    position:absolute;
+     text-align:center;
+   right:70px; top:0px;
+
+}
+.contact p {
+    margin-bottom:10px;
+}
+.contact p:first-child{
+    font-weight:bold;
+    font-size:17px;
+}
+}
+
+/*721~1499*/
+@media all and (min-width:721px) and (max-width:1499px){
+    
+    #bottom{
+        width:100%; height:40%;
+        background-color:#111111;
+        color:#ffffff;
+        font-size:12px;
+    }
+    #bottom a{
+       
+        display:block;
+    }
+    .bottom_wrap{
+        width:95%;
+        margin:20px auto;
+    }
+    /*logo*/
+    #bottom h1 img{
+        margin-top:20px;
+        float:left;
+        transform:scale(0.9);
+    }
+    .bottom_top{
+        position:relative;
+    }
+    .bottom_top ul li a{
+        display:block;
+    }
+    .bottom_top .info{
+        float:left;
+    }
+    .bottom_top .info a{
+        color:#ffffff;
+    }
+    
+    .bottom_top  .info li{
+        float:left; 
+        margin:40px 10px;
+    }
+    
+    /*sns*/
+    .bottom_top .sns{
+        float:right;
+        margin-right:70px;
+        cursor:pointer;
+    }
+    .bottom_top .sns li{
+        float:left;
+        margin:25px 5px;
+        width:45px; height:45px;
+        text-indent:-9999px;
+    }
+    .bottom_top .sns li:nth-child(1){
+        background:url(../images/icon/insta.png) no-repeat center;
+    }
+    .bottom_top .sns li:nth-child(2){
+        background:url(../images/icon/facebook.png) no-repeat 50% 5px;
+        border:4px solid #ffffff;
+        width:43px; height:43px;
+        border-radius:5px;
+       margin-top:25px;
+    }
+    .bottom_top .sns li:nth-child(3){
+        background:url(../images/icon/blog.png) no-repeat center;
+    }
+    .bottom_top .family a{
+        color:#ffffff;   
+    }
+    
+    .bottom_top .family{ 
+        
+       position:absolute;
+       top:100px; right:110px;
+        border:2px solid #ffffff;
+        font-weight: bold;
+        font-size:14px; 
+        line-height:40px;
+        text-align:center;
+        width:100px; height:40px;
+    }
+    .bottom_top .family:hover{
+        border:2px solid #222222;
+        font-weight: bold;
+        background-color:#ffffff;
+    }
+    .bottom_top .family:hover>a{
+        display:block;
+        color:#222222;
+    }
+    .bottom_content {
+        clear:both; width:100%; height:auto;
+        position:relative;
+    }
+ 
+    .guess_korea p:first-child{
+        margin-bottom:20px;
+    }
+    .guess_korea address{
+        font-style:normal;
+        margin-top:20px;
+    }
+    
+    .contact{
+       display:none;
+    }
+}
+
+/*720이하*/
+@media all and (max-width:720px){
+ 
+    #bottom{
+        width:100%; height:40%;
+        background-color:#111111;
+        color:#ffffff;
+        font-size:12px;
+        text-align:center;
+    }
+    #bottom a{
+       
+        display:block;
+    }
+    .bottom_wrap{
+        width:95%;
+        margin:20px auto;
+    }
+    /*logo*/
+    #bottom h1 img{
+        margin-top:20px;
+        float:left;
+        transform:scale(0.9);
+    }
+    .bottom_top{
+        position:relative;
+    }
+    .bottom_top ul li a{
+        display:block;
+    }
+    .bottom_top .info{
+        float:left;
+    }
+    .bottom_top .info a{
+        color:#ffffff;
+    }
+    
+    .bottom_top  .info li{
+        float:left; 
+        margin:40px 10px;
+    }
+    
+    /*sns*/
+    .bottom_top .sns{
+        display:none;
+    }
+   
+    .bottom_top .family {
+        display:none;
+    }
+    .bottom_content {
+        clear:both; width:100%; height:auto;
+        position:relative;
+    }
+
+    .guess_korea p:first-child{
+        margin-bottom:20px;
+    }
+    .guess_korea address{
+        font-style:normal;
+        margin-top:20px;
+    }
+    
+    .contact{
+       display:none;
+    }
+}

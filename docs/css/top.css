@@ -1,0 +1,596 @@
+@charset "utf-8";
+
+.em{height:3000px;}
+/*1500이상*/
+@media all and (min-width:1500px){
+    #top{
+        width:100%; 
+     
+    }
+    .menu_wrap{
+        width:100%; height:160px; 
+        position:fixed;
+        z-index:100;
+    }
+    /*logo*/
+    .menu_wrap > h1 >a >img{
+        width:77px; height:67px;
+        float:left;
+        margin-top:30px;
+        margin-left:65px;
+    }
+    /*장바구니,마이페이지,검색*/
+    .quick{
+        height:54px;
+        float:right;
+       margin-right:65px;
+       margin-top:45px;
+    }
+    .quick li{
+        height:54px;
+        float:left;
+       margin-left:10px;
+    }
+    .quick li:first-child{
+        margin-left:0;
+    }
+    
+    .quick li>a>img{
+        width:45px; height:45px;
+    }
+    /*검색창*/
+    .quick>li:nth-child(1)>div{
+        float:left;
+    }
+    #search{
+        width:400px; height:50px;
+        margin-right:15px;
+        border:2px solid #222222;
+        text-indent:10px;
+    }
+
+       /*bg 추가태그*/
+       .bg{
+        position:absolute;
+        top:110px; left:173px;
+        width:700px;
+        height:550px;
+        background-color:#ffffff;
+        z-index:1;
+        
+    }
+ 
+    /*nav*/
+    .nav_wrap{
+        height:70px; 
+        margin-top:40px;
+        position:absolute;
+         top:0; left:173px;
+         z-index:20;
+
+    }
+ 
+    .nav_wrap>ul> li{ 
+        float:left;
+        line-height:60px;
+        height:60px;
+        width:140px;
+        text-align:center;
+        z-index:10;
+    }
+    .nav_wrap>ul> li>a{
+        font-weight:bold;
+        font-size:20px;
+        display:block;
+        color:#222222;
+    }
+   
+    .nav_wrap .sub li{  
+        font-size:15px;
+        line-height:60px;  
+    }
+
+    .sub_t li a{
+        display:block;
+        width:140px; height:auto;
+      
+    }
+
+    /*메인메뉴 리스트*/
+    .sub li a{
+        color:#222222;
+        display:block;
+     
+        box-sizing: border-box;
+        font-size:16px;
+        height:50px;
+        line-height:50px;
+    }
+
+    /*denim> women men>소메뉴*/
+    .sub_s > li> a{
+        display:block;
+        line-height:30px;
+        height:30px;
+        font-size:14px;
+        width:137px;
+    }
+
+    .sub_s > li:hover > a{
+        color:black;
+        font-weight:bold;
+        border-bottom:3px solid red;
+        width:137px;
+    }
+
+    .quick_t{display:none;}
+    .nav_wrap_t{display:none;}
+    .quick_m{display:none;}
+}
+
+    /*서브메뉴*/
+    .sub1>a{    
+        text-align:center;
+        font-weight:bold;
+        display:block;
+        width:100%;
+        height:auto;
+    }
+
+    .sub> li:hover> a {
+        color:black;
+        text-align:center;
+        font-weight:bold;
+          border-bottom:3px solid red;
+          width:137px;
+    }
+
+
+    .sub1> a:first-child{     
+        color:#222222;
+        font-size:18px; width:137px;
+    }
+
+    .sub{
+        width:143px;
+        border:3px solid #333333;
+    }
+
+/*721~1499*/
+@media all and (min-width:721px) and (max-width:1499px){
+    #top{
+        width:100%; 
+     
+    }
+    .menu_wrap{
+        width:100%; 
+        position:fixed;
+        z-index:100;
+    }
+    /*logo*/
+    .menu_wrap > h1 >a >img{
+        width:77px; height:67px;
+        float:left;
+        margin-top:30px;
+        margin-left:65px;
+    }
+    /*장바구니,마이페이지,검색*/
+    .quick_t{
+        height:54px;
+        float:right;
+       margin-right:65px;
+       margin-top:35px;
+    }
+    .quick_t li{
+        height:54px;
+        float:left;
+       margin-left:10px;
+    }
+    .quick_t li:first-child{
+        margin-left:0;
+    }
+    
+    .quick_t li>a>img{
+        width:40; height:40;
+    }
+       /*검색창*/
+       .quick_t>li:nth-child(1)>div{
+        float:left;
+    }
+    #search2{
+        width:300px; height:45px;
+        margin-right:17px;
+        text-indent:10px;
+        border:2px solid #222222;
+        
+        
+    }
+/*햄버거버튼*/
+    .ham1{
+        margin-top:3px;
+        width:40px; height:35px;
+        cursor:pointer;
+        position:relative;
+       z-index:50;
+    }
+    .ham1 span{
+        width:100%; height:4px; 
+        background-color:#222222;
+        font-size:0px;
+        display:block;
+        position:absolute;
+        margin-left:7px;
+        transition: all 0.25s;
+
+    }
+    .ham1.active1 .bar1{/*js*/
+    transform:rotate(45deg);
+    margin-top:16px;
+    }
+    .ham1.active1 .bar2{/*js*/
+        opacity:0;
+        }
+    .ham1.active1 .bar3{/*js*/
+        transform:rotate(-45deg);
+        margin-bottom:15px;
+        }
+    .bar1{ top:0;}
+    .bar2{top:50%; transform:translate(0,-50%);}
+    .bar3{bottom:0;}
+
+    /*nav_wrap_t*/
+    .nav_wrap_t{
+        position:fixed;
+        right:-50%;top:0;
+        border:2px solid #222222;
+        background-color:#ffffff;
+       width:50%;
+        z-index:40;
+        height:100%;
+    }
+    .nav_wrap_t .quick_t2{
+        margin-right:120px;
+    }
+    .nav_wrap_t .quick_t2 li{
+        margin-top:30px;
+        float:left;
+        width:50%;
+        text-align:center; 
+       
+    }
+    .nav_t{
+        clear:both;   
+        font-size:20px;
+        margin-top:50px;
+    }
+    .nav_t>li>a{
+        height:80px;
+        display:block;
+       line-height:100px;
+       padding-left:50px;
+       border-bottom:2px solid #626262;
+       position:relative;
+    }
+    .nav_t>li:hover>a{
+        color:#222222;
+        font-weight:bold;
+    }
+    .sub_t>li:hover>a{
+        color:#222222;
+        font-weight:bold;
+    }
+    .nav_t>li>a::after{content:" + ";
+       position:absolute;
+       right:0; top:0;
+        margin-right:80px;
+        color:#222222;
+        font-size:24px;
+        
+    }
+   .sub_t{ /*denim-women men*/
+      width:100%; height:100%;
+     font-size:18px; 
+     padding-left:50px;
+     padding-top:20px;
+     
+   }
+   
+   .sub1_t> a{
+    color:#222222;
+    border-bottom:2px solid #222222;
+  }
+  .sub1_t{
+    width:50%; 
+    float:left;
+  }
+
+  .sub_s_t{/*-women men- list*/
+    font-size:15px;
+    margin-bottom:15px;
+    margin-top:15px;
+  
+  }
+
+ .nav_t>li:nth-of-type(5){
+     clear:both; 
+    
+    }
+
+       /*bg 추가태그*/
+       .bg{
+        position:absolute;
+        top:110px; left:173px;
+        width:700px;
+        height:550px;
+        background-color:#eeeeee;
+        z-index:1;
+    }
+ 
+    
+    .sub li a{
+        color:#666666;
+    }
+
+    /*서브메뉴*/
+    .sub1>a{    
+        text-align:center;
+        font-weight:bold;
+        display:block;
+        width:140px;
+        height:auto;
+    }
+    .sub> li:hover> a {
+        color:black;}
+
+    .sub1> a:first-child{     
+        color:#222222;
+        font-size:18px;
+    }
+ 
+    
+    /*denim> women men*/
+    .sub_s > li> a{
+        display:block;
+        line-height:27px;
+    }
+
+
+    .sub_s_t >li:hover>a{
+        color:black;
+      font-weight:bold;
+    } 
+
+    .nav_wrap{display:none;}
+    .quick{display:none;}
+    .quick_m{display:none;}
+}
+
+
+
+
+/*720이하*/
+@media all and (max-width:720px){
+    #top{
+        width:100%; 
+     
+    }
+    .menu_wrap{
+        width:100%; 
+        position:fixed;
+        z-index:100;
+      height:80px;
+     
+    }
+    /*logo*/
+    .menu_wrap > h1 >a >img{
+        width:77px; height:67px;
+        float:left;
+        margin-top:20px;
+        margin-left:35px;
+      
+    }
+    /*장바구니,마이페이지,검색*/
+    .quick_t{
+        height:54px;
+        float:right;
+       margin-right:35px;
+       margin-top:25px;
+  
+    }
+    .quick_t li{
+        height:54px;
+        float:left;
+       margin-left:10px;
+    }
+    .quick_t li:first-child{
+        margin-left:0;
+    }
+    .quick_t li>a{
+        font-size:12px;
+    }
+    .quick_t li>a>img{
+        width:40px; height:40px;
+    }
+/*햄버거버튼*/
+    .ham1{
+        margin-top:3px;
+        width:40px; height:35px;
+        cursor:pointer;
+        position:relative;
+       z-index:10;
+    }
+    .ham1 span{
+        width:100%; height:4px; 
+        background-color:#222222;
+        font-size:0px;
+        display:block;
+        position:absolute;
+        margin-left:7px;
+        transition: all 0.25s;
+
+    }
+    .ham1.active1 .bar1{/*js*/
+    transform:rotate(45deg);
+    margin-top:16px;
+    }
+    .ham1.active1 .bar2{/*js*/
+        opacity:0;
+        }
+    .ham1.active1 .bar3{/*js*/
+        transform:rotate(-45deg);
+        margin-bottom:15px;
+        }
+    .bar1{ top:0;}
+    .bar2{top:50%; transform:translate(0,-50%);}
+    .bar3{bottom:0;}
+
+    /*nav_wrap_t*/
+    .nav_wrap_t{
+        position:fixed;
+        right:-50%;top:0;
+        border:2px solid #222222;
+        background-color:#ffffff;
+       width:50%;
+       height:100%;
+        z-index:2;
+
+    }
+    .nav_wrap_t .quick_t2{
+        margin-right:80px;
+    }
+    .nav_wrap_t .quick_t2 li{
+        margin-top:30px;
+        float:left;
+        width:50%;
+        text-align:center; 
+       
+    }
+      /*검색창*/
+      .quick_t>li:nth-child(1)>div{
+        float:left;
+    }
+    #search2{
+        width:200px; height:40px;
+        margin-right:15px;
+        text-indent:10px;
+        border:2px solid #222222;
+    }
+
+    /*장바구니*/
+    .quick_t2>li>p{
+        font-size:13px;
+    }
+    
+    .nav_t{
+        clear:both;   
+        font-size:20px;
+        margin-top:50px;
+    }
+    .nav_t>li>a{
+        height:80px;
+        display:block;
+       line-height:100px;
+       padding-left:20px;
+       border-bottom:2px solid #626262;
+       position:relative;
+    }
+    .nav_t>li:hover>a{
+        color:#222222;
+        font-weight:bold;
+    }
+
+    .nav_t>li>a::after{content:" + ";
+       position:absolute;
+       right:0; top:0;
+        margin-right:30px;
+        color:#222222;
+        font-size:20px;
+        
+    }
+   .sub_t{ 
+      width:100%; height:100%;
+     font-size:16px; 
+     padding-left:20px;
+     padding-top:20px;
+     
+   }
+   .sub_t>li:hover>a{
+    color:#222222;
+    font-weight:bold;
+   }
+
+   .sub1_t> a{
+    color:#222222;
+    border-bottom:2px solid #222222;
+  }
+  .sub1_t{
+    width:50%; 
+    float:left;
+  }
+
+  .sub_s_t{
+    font-size:15px;
+    margin-bottom:15px;
+    margin-top:15px;
+  
+  }
+  .sub_s_t >li:hover>a{
+    color:black;
+  font-weight:bold;
+} 
+
+
+       /*bg 추가태그*/
+       .bg{
+        position:absolute;
+        top:110px; left:173px;
+        width:700px;
+        height:550px;
+        background-color:#eeeeee;
+        z-index:1;
+    }
+ 
+    
+
+    /*메인메뉴*/
+    .sub li a{
+        color:#666666;
+    }
+
+    /*서브메뉴*/
+    .sub1>a{    
+        text-align:center;
+        font-weight:bold;
+        display:block;
+        width:140px;
+        height:auto;
+    }
+    .sub> li:hover> a {
+        color:black;}
+
+    .sub1> a:first-child{     
+        color:#222222;
+        font-size:15px;
+    }
+ 
+    
+    /*denim> women men*/
+    .sub_s > li> a{
+        display:block;
+        line-height:27px;
+    }
+
+    .sub_s > li:hover > a{
+        color:black;
+    }
+    .nav_t>li:nth-of-type(5){
+        clear:both; 
+       }
+    .nav_wrap{display:none;}
+    .quick{display:none;}
+    .quick_m{display:none;}
+
+    
+}
+
+
