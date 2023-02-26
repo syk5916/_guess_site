@@ -261,7 +261,7 @@ body,html{height:100%; }
         float:right;
         position:relative;
     }
-    .box2> ul:fist li{
+    .box2> ul:first li{
         font-size:25px;
     }
     .box2 button{
